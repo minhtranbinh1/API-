@@ -1,0 +1,53 @@
+POST  http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "m",
+    "password": "123456"
+}
+### 
+POST http://localhost:5000/api/auth/login
+Content-type: application/json
+
+
+{
+   "username": "minh1",
+   "password": "minh" 
+}
+###
+
+POST  http://localhost:5000/post/create/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTNlZmIwNDE4NDg3NjExOWU1YTQ1ZTEiLCJpYXQiOjE2MzE1MTc0NDR9.KBDMwwv5QLSn4VGqcY0wWJvdjWZ_7bmdOO4y_6Kj0sc
+
+{
+    "title": "React JS",
+    "description": "ReactJs",
+    "url": "react.com",
+    "status": "LEARNED"
+}
+###
+
+GET http://localhost:5000/post/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTNlZDNiMTAxMThlOGU1YmNlYzBiZGQiLCJpYXQiOjE2MzM1MjkyMzF9.4GyIYgAQ8hKMTPUgzDGejiXCe6onKi08Qzx3TBMCyVA
+
+###
+
+PUT http://localhost:5000/post/update/613ef7580528ec7efe8f178c
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTNlZDNiMTAxMThlOGU1YmNlYzBiZGQiLCJpYXQiOjE2MzE1MTkxOTJ9.EhiZ5m9qbQ7BahzBwhaPBuNzVFh3i70ucLyGeZGR_hU
+
+
+{
+    "title": "Test UPDATE",
+    "description": "Update info",
+    "url": "fb.com",
+    "status": "LEARNED"
+}
+### 
+DELETE  http://localhost:5000/post/delete/613efb0e184876119e5a45e3
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTNlZDNiMTAxMThlOGU1YmNlYzBiZGQiLCJpYXQiOjE2MzE1MTkxOTJ9.EhiZ5m9qbQ7BahzBwhaPBuNzVFh3i70ucLyGeZGR_hU
+
+
